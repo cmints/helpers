@@ -1,0 +1,12 @@
+{
+	"Add Translation String": {
+		"prefix": "i18n string",
+		"body": "{${1}[${2}] ${TM_SELECTED_TEXT}}",
+		"description": "Add CMintS i18n String"
+	},
+	"Convert markdown link to target blank": {
+		"prefix": "Target blank anchor",
+		"body": "${TM_SELECTED_TEXT/\\[(.*?)\\]\\((.*?)\\)/<a href=\"$2\" target=\"_blank\">$1<\\/a>/}",
+		"description": "Convert markdown link to target blank"
+	}
+}
