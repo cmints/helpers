@@ -1,0 +1,29 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "cmd+t",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "{${1}[${2}] ${TM_SELECTED_TEXT}}"
+    }
+  },
+  {
+    "key": "cmd+shift+f",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "<fix>${TM_SELECTED_TEXT}</fix>"
+    }
+  },
+  {
+    "key": "alt+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  }
+]
